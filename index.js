@@ -1,9 +1,7 @@
+module.exports = Phrase;
 // Adds `reverse` to all strings.
 String.prototype.reverse = function reverse() {
   return Array.from(this).reverse().join("");
-}
-String.prototype.blank = function blank() {
-  return !!this.match(/^\s*$/g);
 }
 
 // Defines a Phrase object
