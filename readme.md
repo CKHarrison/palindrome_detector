@@ -1,5 +1,4 @@
 # Palindrome Detector
-
 This is a palindrome detector created using Michael Hartl's Learn Enough Javascript to Be Dangerous tutorial.
 
 ```
