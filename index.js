@@ -19,13 +19,7 @@ function Phrase(content) {
 
    // Returns only the letters in this.content
    this.letters = function() {
-     let matchedLetters = [];
-     for(let i = 0; i < this.content.length; i++) {
-       if(this.content.charAt(i).match(/[a-zA-Z]/)) {
-         matchedLetters.push(this.content.charAt(i));
-       }
-     }
-     return matchedLetters.join("");
+     return (this.content.match(/[a-z]/gi) || []).join("");
    }
 
   // returns true for a palindrome, false otherwise
