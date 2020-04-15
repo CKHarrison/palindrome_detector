@@ -14,12 +14,18 @@ function Phrase(content) {
 
   // Returns content processed for palindrome testing
    this.processedContent = function processedContent(){
-    return this.processor(this.content);
+    return this.processor(this.letters());
    };
 
-   // Returns letters in this.content
+   // Returns only the letters in this.content
    this.letters = function() {
-     return this.content;
+     let matchedLetters = [];
+     for(let i = 0; i < this.content.length; i++) {
+       if(this.content.charAt(i).match(/[a-zA-Z]/)) {
+         matchedLetters.push(this.content.charAt(i));
+       }
+     }
+     return matchedLetters.join("");
    }
 
   // returns true for a palindrome, false otherwise
