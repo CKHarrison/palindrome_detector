@@ -17,6 +17,10 @@ function Phrase(content) {
     return this.processor(this.content);
    };
 
+   // Returns letters in this.content
+   this.letters = function() {
+     return this.content;
+   }
 
   // returns true for a palindrome, false otherwise
   this.palindrome = function palindrome() {

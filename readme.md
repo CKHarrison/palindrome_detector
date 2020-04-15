@@ -10,3 +10,4 @@ let leighMercer = new Phrase("A man, A plan, A Canal-Panama!);
 console.log(leighMerer.palindrome());
 $ node test.js
 true
+```
